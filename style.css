@@ -1,0 +1,54 @@
+body {
+    height: 100vh;
+    background-image: linear-gradient(109.5deg, rgba(229, 233, 177, 1) 11.2%, rgba(223, 205, 187, 1) 100.2%);
+
+    overflow-y: hidden;
+}
+
+#canvas {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.score,
+.gameover {
+    color: rgb(55, 78, 85);
+    font-size: 1.72rem;
+    z-index: 999;
+}
+
+.score {
+    padding: 1rem;
+}
+
+.gameover {
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    color: rgb(220, 20, 60);
+    ;
+}
+
+.instructions {
+    animation: blinker 1.2s ease-in-out infinite alternate;
+    font-size: 1.3rem;
+    color: #d03850;
+}
+
+.hide {
+    display: none;
+}
+
+@keyframes blinker {
+    to {
+        opacity: 0;
+    }
+}
